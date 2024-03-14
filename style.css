@@ -1,0 +1,157 @@
+body {
+  background-color: #e9f1f3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.encriptador-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  margin-top: 9%;
+}
+
+.caja-encriptador {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+label {
+  color: #0a3871;
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  /* background-color: lightblue; */
+  outline: none;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  margin: 5px;
+  font-size: 15px;
+  width: 300px;
+  /* height: 60px;  Establecer la altura deseada */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+}
+
+textarea {
+  padding: 15px 30px;
+  margin-top: 10px;
+  width: 680px;
+  height: 288px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+textarea::placeholder {
+  color: #0a38714a;
+}
+
+section img {
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.aviso-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  text-align: center;
+  height: 100%;
+}
+.aviso-mensaje > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.caja-encriptador p:nth-of-type(2) {
+  color: #495057;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+}
+.cifrar {
+  background-color: #0a3871;
+  color: #d8dfe8;
+  width: 300px;
+}
+
+.descifrar {
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  width: 300px;
+}
+
+.copiar {
+  background: #0a3871;
+  color: white;
+  width: 80%;
+  box-shadow: 2px 2px 2px #495057;
+}
+
+#customPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  text-align: center;
+}
+
+#closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  /* margin: 0 auto; */
+  background-color: #0c2457;
+  padding: 50px;
+}
+
+li {
+  margin: 5px 0;
+  color: white;
+}

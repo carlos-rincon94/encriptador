@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="encriptador-texto">
+        <div class="caja-encriptador">
+          <label for="textoUsuario">Encriptador</label>
+          <textarea
+            type="text"
+            id="textoUsuario"
+            rows="15"
+            cols="15"
+            placeholder="ingrese su texto aquí"
+          ></textarea>
+          <div id="customPopup">
+            <div id="closeButton" onclick="closePopup()">X</div>
+            <p id="popupMessage"></p>
+          </div>
+
+          <p>Solo letras minúsculas y acentos</p>
+          <div class="botones">
+            <button class="cifrar" onclick="cifrarTexto()">Cifrar</button>
+            <button class="descifrar" onclick="descifrarTexto()">
+              Descifrar
+            </button>
+          </div>
+        </div>
+        <div class="aviso-mensaje">
+          <h4 id="titulo-resultado"></h4>
+          <p id="resultadoCifrado"></p>
+          <div>
+            <img
+              src="https://www.9and10news.com/resizer/wEIcSjTWvhfvMBpPc3QmRqAZW0A=/1200x630/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/910mediagroup/ULDX5FJUT5DRBB6QN7A3RFXQYA.jpg"
+              alt=""
+            />
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <button class="copiar" onclick="copiarTexto()">Copiar texto</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>Carlos Rincon</li>
+        <li>Encriptador</li>
+        <li>2024</li>
+      </ul>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
